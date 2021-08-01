@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#212530"
+    android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="bottom|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="YemekSepeti"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

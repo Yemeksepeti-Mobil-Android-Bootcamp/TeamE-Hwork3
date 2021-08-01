@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet"
+            />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/send"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rate"
+            android:title="Rate Our App" />
+
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/support"
+            android:title="View Support" />
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/notifications"
+            android:title="Notification" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+    </group>
+
+</menu>
