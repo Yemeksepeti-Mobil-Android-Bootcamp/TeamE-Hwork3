@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212530"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/productdetail"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/product_detail_shape"
+            android:backgroundTint="#212530"
+            android:layout_gravity="bottom|center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historic Kolonos"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athens,Attica,Greece"
+                android:textColor="#808080"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:layout_gravity="center"  />
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$244"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06 July - 14 July, 2 guest"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#219653"
+            android:text="4.9"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="14sp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="54 Reviews"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"
+        android:layout_marginVertical="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_wifi_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Wifi"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_local_drink_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Drink"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_pets_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pets"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_pool_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pool"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_live_tv_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Digital TV"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"
+        android:layout_marginVertical="10dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_detail_text"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/productbackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedCorners" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/productbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedCorners" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedCorners"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:srcCompat="@drawable/productbackground" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:shapeAppearanceOverlay="@style/roundedCorners"
+            app:srcCompat="@drawable/productbackground" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Room"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/twitter_button"/>
+</LinearLayout>
+</ScrollView>

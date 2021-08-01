@@ -1,0 +1,2 @@
+rootProject.name = "Yemeksepeti-Mobil-Android-TeamE-HW3"
+include ':app'

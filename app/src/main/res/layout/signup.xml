@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#212530">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="88sp"
+        android:layout_marginBottom="32sp"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="157sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13sp"
+            android:background="@drawable/facebook_button"
+            android:paddingStart="10sp"
+            android:drawableLeft="@drawable/ic_group"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Facebook"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="157sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/twitter_button"
+            android:paddingStart="10sp"
+            android:drawablePadding="12sp"
+            android:drawableLeft="@drawable/twitter"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Twitter"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or sign up with email"
+        android:textAlignment="center"
+        android:textColor="#80FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="24sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        app:cardCornerRadius="15dp"
+        android:paddingStart="24sp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:textSize="14sp"
+            android:paddingStart="20sp"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:paddingStart="24sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+
+            android:textSize="14sp"
+            android:text="Your Email"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:paddingStart="24sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+
+            android:textSize="14sp"
+            android:text="Password"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:paddingStart="24sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+
+            android:textSize="14sp"
+            android:text="Confirm Password"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:text="Sign up"
+        android:textSize="16sp"
+        android:layout_marginBottom="89sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/white"
+        android:background="@drawable/twitter_button"
+        android:backgroundTint="#2D9CDB"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/HaveAcc"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="14sp"
+        android:layout_marginBottom="20sp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>

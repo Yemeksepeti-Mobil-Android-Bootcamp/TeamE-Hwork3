@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yemeksepeti-Mobil-Android-TeamE-HW3</string>
+    <string name="HaveAcc">Already have an account?
+        <b><font color="#2D9CDB">Log in</font></b>
+        </string>
+    <string name="product_detail_text">Located in the coffee region, in the Andean mountains of Colombia, America, a charming cabana made from...</string>
+</resources>
