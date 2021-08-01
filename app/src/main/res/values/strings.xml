@@ -4,4 +4,6 @@
         <b><font color="#2D9CDB">Log in</font></b>
         </string>
     <string name="product_detail_text">Located in the coffee region, in the Andean mountains of Colombia, America, a charming cabana made from...</string>
+    <string name="onboarding_last_title">Find best deals</string>
+    <string name="onboarding_last_button_text">Get started</string>
 </resources>
