@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.YemeksepetiMobilAndroidTeamEHW3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -19,5 +19,113 @@
     <style name="roundedCorners" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10%</item>
+    </style>
+
+
+
+<style name="travel_guid">
+<item name="android:textSize">
+    28sp
+</item>
+<item name="android:letterSpacing">
+    -0.02
+</item>
+<item name="android:textColor">
+    #FFFFFF
+</item>
+</style>
+
+<style name="find_your_b">
+<item name="android:textSize">
+    16sp
+</item>
+<item name="android:letterSpacing">
+    -0.02
+</item>
+<item name="android:textColor">
+    #FFFFFF
+</item>
+</style>
+
+<style name="already_hav">
+<item name="android:textSize">
+    14sp
+</item>
+<item name="android:letterSpacing">
+    -0.02
+</item>
+<item name="android:textColor">
+    #FFFFFF
+</item>
+</style>
+
+<style name="log_in">
+<item name="android:textSize">
+    14sp
+</item>
+<item name="android:letterSpacing">
+    -0.02
+</item>
+<item name="android:textColor">
+    #2D9CDB
+</item>
+</style>
+
+<style name="plan_your_t">
+<item name="android:textSize">28sp</item>
+<item name="android:letterSpacing">-0.02</item>
+
+<item name="android:textColor">
+    #FFFFFF
+</item>
+
+</style>
+
+<style name="text">
+
+<item name="android:textSize">
+    16sp
+</item>
+
+<item name="android:letterSpacing">
+    -0.02
+</item>
+
+<item name="android:textColor">
+    #80FFFFFF
+</item>
+
+</style>
+<style name="ShapeAppearanceOverlay.App.SelectedCornerRadius" parent="">
+<item name="cornerSizeTopRight">75dp</item>
+<item name="cornerFamilyTopRight">rounded</item>
+<item name="cornerSizeBottomLeft">75dp</item>
+<item name="cornerFamilyBottomLeft">rounded</item>
+</style>
+
+<style name="ShapeAppearanceOverlay.App.SelectedCornerCut" parent="">
+<item name="cornerSizeTopRight">75dp</item>
+<item name="cornerFamilyTopRight">cut</item>
+<item name="cornerSizeBottomLeft">75dp</item>
+<item name="cornerFamilyBottomLeft">cut</item>
+</style>
+
+    <style name="roundedCornersImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="halfRoundedCornersImageView" parent="">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/accent_color</item>
+        <item name="colorPrimaryDark">@color/accent_color</item>
+        <item name="colorAccent">@color/white</item>
     </style>
 </resources>
