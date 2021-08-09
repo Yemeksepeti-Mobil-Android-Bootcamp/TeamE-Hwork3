@@ -1,4 +1,4 @@
-package com.example.yemeksepeti_mobil_android_teame_hw3
+package com.example.yemeksepeti_mobil_android_teame_hw3.util.onboarding
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.RelativeLayout
 import androidx.viewpager.widget.ViewPager
+import com.example.yemeksepeti_mobil_android_teame_hw3.MainActivity
+import com.example.yemeksepeti_mobil_android_teame_hw3.R
+import com.example.yemeksepeti_mobil_android_teame_hw3.StartActivity
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.OnBoardingViewPagerAdapter
 import com.example.yemeksepeti_mobil_android_teame_hw3.model.OnBoardingData
 import com.google.android.material.tabs.TabLayout
@@ -30,7 +33,7 @@ class OnBoardingActivity : AppCompatActivity() {
         //If isFirstTimeRun = true -> navigate to home page
         //If isFirstTimeRun = false -> continue this page
         if(restorePrefData()) {
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, StartActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -51,8 +54,10 @@ class OnBoardingActivity : AppCompatActivity() {
     }
 
     private fun initOnBoardingData() {
-        onBoardingDataList.add(OnBoardingData("Get inspiration\n for your next trip", R.drawable.onboarding_1, "We’re happy to share our best tips for\n destinations where you can relax. But you\n find the nicest city trips as well!"))
-        onBoardingDataList.add(OnBoardingData("Find best place\n for your journey",  R.drawable.onboarding_2, "We’re happy to share our best tips for\n destinations where you can relax. But you\n find the nicest city trips as well!"))
+        onBoardingDataList.add(OnBoardingData("Get inspiration\n for your next trip",
+            R.drawable.onboarding_1, "We’re happy to share our best tips for\n destinations where you can relax. But you\n find the nicest city trips as well!"))
+        onBoardingDataList.add(OnBoardingData("Find best place\n for your journey",
+            R.drawable.onboarding_2, "We’re happy to share our best tips for\n destinations where you can relax. But you\n find the nicest city trips as well!"))
 
         setOnBoardingViewPagerAdapter(onBoardingDataList)
     }

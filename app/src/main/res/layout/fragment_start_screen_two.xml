@@ -41,29 +41,31 @@
 
             >
         </ImageView>
+
         <androidx.appcompat.widget.AppCompatButton
-            android:textAllCaps="false"
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24sp"
-            android:layout_marginEnd="24sp"
-            android:text="Log in"
-            android:textSize="16sp"
             android:layout_marginTop="450dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:textColor="@color/white"
+            android:layout_marginEnd="24sp"
             android:background="@drawable/twitter_button"
             android:backgroundTint="#2D9CDB"
-            android:gravity="center"/>
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
         android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Creare account"
         android:gravity="center"
-
         android:layout_marginStart="24sp"
         android:layout_marginEnd="24sp"
         android:textSize="16sp"

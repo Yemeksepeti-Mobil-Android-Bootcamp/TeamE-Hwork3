@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/catalogFragment"
+        tools:layout="@layout/fragment_catalog_recycler"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.catalog.CatalogFragment"
+        android:label="CatalogFragment" >
+        <action
+            android:id="@+id/action_catalogFragment_to_catalogDetailFragment"
+            app:destination="@id/catalogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogDetailFragment"
+        tools:layout="@layout/fragment_catalog_detail"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.catalog_detail.CatalogDetailFragment"
+        android:label="CatalogDetailFragment" >
+        <action
+            android:id="@+id/action_catalogDetailFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        tools:layout="@layout/fragment_product"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.product.ProductFragment"
+        android:label="ProductFragment" >
+        <action
+            android:id="@+id/action_productFragment_to_fragmentProductDetail"
+            app:destination="@id/fragmentProductDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProductDetail"
+        tools:layout="@layout/fragment_product_detail"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.product_detail.FragmentProductDetail"
+        android:label="FragmentProductDetail" />
+
+</navigation>
