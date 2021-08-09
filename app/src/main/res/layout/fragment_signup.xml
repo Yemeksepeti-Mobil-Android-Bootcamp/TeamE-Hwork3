@@ -172,15 +172,5 @@
         android:textColor="@color/white"
         android:background="@drawable/twitter_button"
         android:backgroundTint="#2D9CDB"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/HaveAcc"
-        android:fontFamily="@font/montserrat_regular"
-        android:textSize="14sp"
-        android:layout_marginBottom="20sp"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"/>
-
 
 </LinearLayout>

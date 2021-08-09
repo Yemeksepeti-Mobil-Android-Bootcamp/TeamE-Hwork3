@@ -96,7 +96,7 @@ class OnBoardingActivity : AppCompatActivity() {
     private fun btnGetStartedListener() {
         viewPagerAdapter?.btnGetStarted?.setOnClickListener {
             savePrefData()
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, StartActivity::class.java)
             startActivity(intent)
             finish()
         }

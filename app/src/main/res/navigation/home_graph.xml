@@ -42,5 +42,10 @@
         tools:layout="@layout/fragment_product_detail"
         android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.product_detail.FragmentProductDetail"
         android:label="FragmentProductDetail" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.yemeksepeti_mobil_android_teame_hw3.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" />
 
 </navigation>

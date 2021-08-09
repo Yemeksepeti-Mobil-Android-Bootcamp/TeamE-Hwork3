@@ -117,5 +117,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
 </LinearLayout>
