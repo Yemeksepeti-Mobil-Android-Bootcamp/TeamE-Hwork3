@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:fontFamily="@font/montserrat_bold"
         android:layout_marginTop="64dp"
         android:text="@string/plan_your_t"
         android:textAppearance="@style/plan_your_t"
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_regular"
         android:text="@string/text"
         android:textAppearance="@style/text"
         android:gravity="center_horizontal"
@@ -31,16 +33,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center">
+
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="23dp"
-            android:background="@drawable/bg_img"
-
             android:layout_centerHorizontal="true"
-
-            >
-        </ImageView>
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bg_img" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"

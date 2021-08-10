@@ -37,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_bold"
         android:layout_marginTop="6dp"
         android:text="@string/travel_guid"
         android:textAppearance="@style/travel_guid"
@@ -48,6 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
         android:layout_alignParentTop="true"
         android:layout_marginTop="4dp"
         android:text="@string/find_your_b"
@@ -64,7 +66,6 @@
         android:text="Get Started"
         android:textSize="16sp"
         android:layout_marginTop="400dp"
-
         android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/white"
         android:background="@drawable/twitter_button"
@@ -78,8 +79,7 @@
             android:id="@+id/already_hav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-
+            android:fontFamily="@font/montserrat_regular"
             android:layout_marginTop="20dp"
             android:text="@string/already_hav"
             android:textAppearance="@style/already_hav"
