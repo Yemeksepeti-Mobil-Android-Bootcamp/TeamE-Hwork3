@@ -1,7 +1,11 @@
 package com.example.yemeksepeti_mobil_android_teame_hw3.data
 
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginRequest
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.local.LocaleDataSource
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.remote.RemoteDataSource
+import com.example.yemeksepeti_mobil_android_teame_hw3.util.performAuthTokenNetworkOperation
+import com.example.yemeksepeti_mobil_android_teame_hw3.util.performNetworkOperation
 import javax.inject.Inject
 
 class TravelApiRepository @Inject constructor(
@@ -9,4 +13,36 @@ class TravelApiRepository @Inject constructor(
     private var localeDataSource: LocaleDataSource
 
 ) {
+    fun login(loginRequest: LoginRequest) = performAuthTokenNetworkOperation(
+        call = {
+            remoteDataSource.login(loginRequest)
+        },
+        save = {
+            localeDataSource.saveToken(it)
+        }
+    )
+
+    fun checkToken(): String? {
+        return localeDataSource.getToken()
+    }
+
+    fun register(registerRequest: RegisterRequest) = performNetworkOperation {
+        remoteDataSource.register(registerRequest)
+    }
+
+    fun getAllCountryList() = performNetworkOperation {
+        remoteDataSource.getAllCountryList()
+    }
+
+    fun getHotelsByCountryId(countryId : String) = performNetworkOperation {
+        remoteDataSource.getHotelsByCountryId(countryId)
+    }
+
+    fun getHotelById(hotelId : String) = performNetworkOperation {
+        remoteDataSource.getHotelById(hotelId)
+    }
+
+    fun getAllHotels() = performNetworkOperation {
+        remoteDataSource.getAllHotels()
+    }
 }

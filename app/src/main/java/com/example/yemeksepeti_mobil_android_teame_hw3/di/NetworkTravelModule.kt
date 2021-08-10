@@ -52,8 +52,8 @@ class NetworkTravelModule {
 
     @Provides
     fun provideEndpoint(): Endpoint {
-        //https://rickandmortyapi.com/api/
-        return Endpoint("https://dist-learn.herokuapp.com/api/")
+
+        return Endpoint("https://dist-learn.herokuapp.com/")
     }
 
     @Provides
