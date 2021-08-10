@@ -13,17 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YemeksepetiMobilAndroidTeamEHW3">
         <activity
-            android:name=".StartActivity"
+            android:name=".activity.StartActivity"
             android:exported="true" />
         <activity android:name=".NavigationActivity" />
-        <activity android:name=".util.onboarding.OnBoardingActivity">
+        <activity android:name=".activity.OnBoardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
     </application>
 
 </manifest>

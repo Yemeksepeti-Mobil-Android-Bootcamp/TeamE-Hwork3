@@ -1,4 +1,4 @@
-package com.example.yemeksepeti_mobil_android_teame_hw3.util.onboarding
+package com.example.yemeksepeti_mobil_android_teame_hw3.activity
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,9 +8,7 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.RelativeLayout
 import androidx.viewpager.widget.ViewPager
-import com.example.yemeksepeti_mobil_android_teame_hw3.MainActivity
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
-import com.example.yemeksepeti_mobil_android_teame_hw3.StartActivity
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.OnBoardingViewPagerAdapter
 import com.example.yemeksepeti_mobil_android_teame_hw3.model.OnBoardingData
 import com.google.android.material.tabs.TabLayout

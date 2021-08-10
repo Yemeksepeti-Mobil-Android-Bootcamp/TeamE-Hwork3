@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.yemeksepeti_mobil_android_teame_hw3.MainActivity
-import com.example.yemeksepeti_mobil_android_teame_hw3.R
+import com.example.yemeksepeti_mobil_android_teame_hw3.activity.MainActivity
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.FragmentSignupBinding
 
 class RegisterFragment: Fragment() {

@@ -1,11 +1,12 @@
-package com.example.yemeksepeti_mobil_android_teame_hw3
+package com.example.yemeksepeti_mobil_android_teame_hw3.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.yemeksepeti_mobil_android_teame_hw3.R
 import com.example.yemeksepeti_mobil_android_teame_hw3.ui.catalog.CatalogFragment
+import com.example.yemeksepeti_mobil_android_teame_hw3.ui.home.HomeFragment
 import com.example.yemeksepeti_mobil_android_teame_hw3.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
