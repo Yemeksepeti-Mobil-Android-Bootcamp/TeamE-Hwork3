@@ -18,6 +18,7 @@ class DatabaseModule {
         return SharedPrefManager(context)
     }
 
+    @Provides
     fun localDataSource(sharedPrefManager: SharedPrefManager): LocaleDataSource {
         return LocaleDataSource(sharedPrefManager)
     }
