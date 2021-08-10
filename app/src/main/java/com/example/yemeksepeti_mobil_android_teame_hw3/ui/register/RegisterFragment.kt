@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.yemeksepeti_mobil_android_teame_hw3.activity.MainActivity
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.FragmentSignupBinding
 import com.example.yemeksepeti_mobil_android_teame_hw3.util.Resource
 import dagger.hilt.android.AndroidEntryPoint

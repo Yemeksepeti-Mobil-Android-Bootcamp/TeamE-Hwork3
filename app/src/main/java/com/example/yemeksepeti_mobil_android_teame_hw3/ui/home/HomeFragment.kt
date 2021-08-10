@@ -1,4 +1,4 @@
-package com.example.yemeksepeti_mobil_android_teame_hw3
+package com.example.yemeksepeti_mobil_android_teame_hw3.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.yemeksepeti_mobil_android_teame_hw3.R
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.HotelListAdapter
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.PopularDestinationAdapter
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.ToDoAdapter
