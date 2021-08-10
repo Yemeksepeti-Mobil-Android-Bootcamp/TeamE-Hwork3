@@ -1,5 +1,6 @@
 package com.example.yemeksepeti_mobil_android_teame_hw3.ui.register
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -40,6 +41,9 @@ class RegisterFragment : Fragment() {
                         Resource.Status.LOADING -> {
                         }
                         Resource.Status.SUCCESS -> {
+                            val intent = Intent(context, MainActivity::class.java)
+                            startActivity(intent)
+                            requireActivity().finish()
                         }
                         Resource.Status.ERROR -> {
                         }

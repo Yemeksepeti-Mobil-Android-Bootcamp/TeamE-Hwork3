@@ -153,7 +153,6 @@
             android:fontFamily="@font/montserrat_regular"
             android:paddingTop="16sp"
             android:paddingBottom="16sp"
-
             android:textSize="14sp"
             android:text="Confirm Password"
             android:textColor="#80031925"

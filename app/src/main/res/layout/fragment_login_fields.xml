@@ -74,6 +74,7 @@
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
     <EditText
+        android:id="@+id/editTextEmailAdress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your email"
@@ -96,13 +97,13 @@
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
     <EditText
+        android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="20sp"
         android:fontFamily="@font/montserrat_regular"
         android:paddingTop="16sp"
         android:paddingBottom="16sp"
-
         android:textSize="14sp"
         android:text="Password"
         android:textColor="#80031925"
@@ -120,7 +121,7 @@
         android:textColor="#FFFFFF"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_log_in"
+        android:id="@+id/login_Button"
         android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
