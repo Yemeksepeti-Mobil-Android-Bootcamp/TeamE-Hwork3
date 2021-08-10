@@ -65,6 +65,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     android:text="Rome"
@@ -75,6 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
                     android:textSize="16sp"
                     android:alpha=".5"
                     android:text="The city setting is stunning with a \n rich architectural and historical \n heritage" />
@@ -86,6 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Book now"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textColor="@color/white"
                     android:textAllCaps="false"/>
             </LinearLayout>
@@ -128,6 +131,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rv_title_background"
                     android:text="Popular Destination"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
@@ -143,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rv_title_background"
                     android:text="Top To Do"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
@@ -158,6 +163,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rv_title_background"
                     android:text="Hotel Best deals"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
