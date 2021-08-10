@@ -8,6 +8,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.yemeksepeti_mobil_android_teame_hw3.ui.catalog.CatalogFragment
 import com.example.yemeksepeti_mobil_android_teame_hw3.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

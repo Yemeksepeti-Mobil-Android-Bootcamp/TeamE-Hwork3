@@ -74,6 +74,7 @@
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
         <EditText
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Username"
@@ -96,6 +97,7 @@
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
         <EditText
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="20sp"
@@ -120,6 +122,7 @@
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
         <EditText
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="20sp"
@@ -159,7 +162,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_signUp"
+        android:id="@+id/button"
         android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
