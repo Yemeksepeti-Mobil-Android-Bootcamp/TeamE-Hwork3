@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/explore"
+        android:id="@+id/homeFragment"
         android:title="Explore"
         android:icon="@drawable/ic_explore" />
     <item
-        android:id="@+id/trips"
+        android:id="@+id/catalogFragment"
         android:title="Trips"
         android:icon="@drawable/ic_trips"/>
     <item
@@ -14,7 +14,7 @@
         android:icon="@drawable/ic_saved"/>
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profileFragment2"
         android:title="Profile"
         android:icon="@drawable/ic_profile"/>
 </menu>

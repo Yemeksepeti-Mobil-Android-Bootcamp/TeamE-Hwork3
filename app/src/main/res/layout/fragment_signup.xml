@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log in"
+        android:text="Create account"
         android:textAlignment="center"
         android:fontFamily="@font/montserrat_bold"
         android:layout_marginTop="88sp"
@@ -58,7 +58,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="or login with email"
+        android:text="or sign up with email"
         android:textAlignment="center"
         android:textColor="#80FFFFFF"
         android:textSize="14sp"
@@ -73,16 +73,16 @@
         android:layout_marginEnd="24sp"
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your email"
-        android:fontFamily="@font/montserrat_regular"
-        android:paddingTop="16sp"
-        android:textSize="14sp"
-        android:paddingStart="20sp"
-        android:textColor="#80031925"
-        android:backgroundTint="#00000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:textSize="14sp"
+            android:paddingStart="20sp"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -95,65 +95,82 @@
         android:layout_marginEnd="24sp"
         android:layout_marginBottom="22sp"
         android:backgroundTint="#F0F0F0">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="20sp"
-        android:fontFamily="@font/montserrat_regular"
-        android:paddingTop="16sp"
-        android:paddingBottom="16sp"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
 
-        android:textSize="14sp"
-        android:text="Password"
-        android:textColor="#80031925"
-        android:backgroundTint="#00000000"/>
+            android:textSize="14sp"
+            android:text="Your Email"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
 
-        </androidx.cardview.widget.CardView>
-    <TextView
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password ?"
-        android:fontFamily="@font/montserrat_regular"
-        android:paddingRight="24sp"
-        android:paddingBottom="24sp"
-        android:textAlignment="textEnd"
-        android:textColor="#FFFFFF"/>
+        android:layout_height="48sp"
+        android:paddingStart="24sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+
+            android:textSize="14sp"
+            android:text="Password"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:paddingStart="24sp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="22sp"
+        android:backgroundTint="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+
+            android:textSize="14sp"
+            android:text="Confirm Password"
+            android:textColor="#80031925"
+            android:backgroundTint="#00000000"/>
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signUp"
         android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
         android:layout_marginEnd="24sp"
-        android:text="Log in"
+        android:text="Sign up"
         android:textSize="16sp"
-        android:layout_marginBottom="120sp"
+        android:layout_marginBottom="89sp"
         android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/white"
         android:background="@drawable/twitter_button"
         android:backgroundTint="#2D9CDB"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account?"
-        android:fontFamily="@font/montserrat_regular"
-        android:textSize="14sp"
-        android:layout_marginBottom="20sp"
-        android:textAlignment="center"
-        android:textColor="#80FFFFFF"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:layout_marginStart="24sp"
-        android:layout_marginEnd="24sp"
-        android:textSize="16sp"
-        android:textColor="#031925"
-        android:fontFamily="@font/montserrat_medium"
-        android:background="@drawable/twitter_button"
-        android:backgroundTint="#FFFFFF"/>
-
 
 </LinearLayout>

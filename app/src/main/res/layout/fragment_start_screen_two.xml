@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212530"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/plan_your_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/plan_your_t"
+        android:textAppearance="@style/plan_your_t"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/text"
+        android:textAppearance="@style/text"
+        android:gravity="center_horizontal"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bg_img"
+
+            android:layout_centerHorizontal="true"
+
+            >
+        </ImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="24sp"
+            android:background="@drawable/twitter_button"
+            android:backgroundTint="#2D9CDB"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creare account"
+        android:gravity="center"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:textSize="16sp"
+        android:textColor="#031925"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/twitter_button"
+        android:backgroundTint="#FFFFFF"/>
+
+</LinearLayout>

@@ -13,8 +13,7 @@
         android:id="@+id/catalog_detail_item_layout"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:background="#212530"
-        android:cardCornerRadius="25dp">
+        android:background="#212530">
 
 
         <androidx.cardview.widget.CardView
@@ -98,13 +97,13 @@
             app:layout_constraintTop_toBottomOf="@+id/placeText" />
 
         <Button
-            android:id="@+id/findHotelButton"
+            android:id="@+id/btn_hotel_show"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#2D9CDB"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Find Hotel"
+            android:text="Show Hotel"
             android:textAllCaps="false"
             android:textSize="14sp"
             app:cornerRadius="8dp"
