@@ -60,7 +60,6 @@ class ProfileFragment: Fragment() {
                     it.finish()
                 }
             }
-
         }
     }
 }
