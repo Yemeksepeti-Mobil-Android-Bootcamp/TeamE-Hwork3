@@ -17,11 +17,11 @@
             android:name="countryId"
             app:argType="string" />
         <action
-            android:id="@+id/action_homeFragment_to_catalogFragment"
-            app:destination="@id/catalogFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_fragmentProductDetail2"
             app:destination="@id/fragmentProductDetail" />
+        <action
+            android:id="@+id/action_homeFragment_to_catalogDetailFragment"
+            app:destination="@id/catalogDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/catalogFragment"

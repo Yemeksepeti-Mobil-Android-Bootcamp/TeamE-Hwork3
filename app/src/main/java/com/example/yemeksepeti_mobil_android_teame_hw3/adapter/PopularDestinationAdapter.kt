@@ -43,7 +43,7 @@ class PopularDestinationAdapter: RecyclerView.Adapter<PopularDestinationAdapter.
         holder.binding.cellPopularDestinationLayout.setOnClickListener {
             val bundle = bundleOf("countryId" to countryList?.data!![position].id)
             var navController = Navigation.findNavController(it)
-            navController.navigate(R.id.action_homeFragment_to_catalogFragment, bundle)
+            navController.navigate(R.id.action_homeFragment_to_catalogDetailFragment, bundle)
         }
     }
 
