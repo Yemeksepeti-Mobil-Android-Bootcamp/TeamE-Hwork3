@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/activity_start.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_catalog_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_catalog_recycler.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_product.xml" value="0.27314814814814814" />
         <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_product_detail.xml" value="0.27314814814814814" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/catalog_detail_item.xml" value="0.1265625" />

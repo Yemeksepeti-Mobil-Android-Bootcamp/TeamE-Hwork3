@@ -45,6 +45,7 @@ class CatalogFragment: Fragment() {
                 Resource.Status.SUCCESS -> {
                     Log.e("Catalog fragment","Succes")
                     adapter.countryList = it.data!!.`data` as ArrayList<CountryData>
+                    _binding.CatalogProgressBar.visibility = View.GONE
                     adapter.notifyDataSetChanged()
 
 
