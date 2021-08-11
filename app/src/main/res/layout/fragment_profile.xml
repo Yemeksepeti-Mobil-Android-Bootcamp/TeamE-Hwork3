@@ -229,6 +229,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_out"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/twitter_button"

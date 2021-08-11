@@ -22,6 +22,7 @@ class TravelApiRepository @Inject constructor(
             localeDataSource.saveToken(it)
         }
     )
+    fun signOut() = localeDataSource.saveToken("")
 
     fun checkToken(): String? {
         return localeDataSource.getToken()
