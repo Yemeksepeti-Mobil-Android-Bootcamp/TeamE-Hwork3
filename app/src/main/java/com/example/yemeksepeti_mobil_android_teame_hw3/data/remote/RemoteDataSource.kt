@@ -2,6 +2,7 @@ package com.example.yemeksepeti_mobil_android_teame_hw3.data.remote
 
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterRequest
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.user.UserRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.util.BaseDataSource
 import javax.inject.Inject
 
@@ -20,4 +21,6 @@ class RemoteDataSource @Inject constructor(
     suspend fun getHotelById(hotelId : String) = getResult { travelApiService.getHotelById(hotelId) }
 
     suspend fun getAllHotels() = getResult { travelApiService.getAllHotels() }
+
+    suspend fun getUserData(Authorization: String) = getResult { travelApiService.getUserData(Authorization) }
 }
