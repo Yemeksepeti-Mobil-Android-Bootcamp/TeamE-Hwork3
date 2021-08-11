@@ -41,6 +41,7 @@ class RegisterFragment : Fragment() {
                         Resource.Status.LOADING -> {
                         }
                         Resource.Status.SUCCESS -> {
+                            viewModel.saveToken(it.data!!.token)
                             val intent = Intent(context, MainActivity::class.java)
                             startActivity(intent)
                             requireActivity().finish()
