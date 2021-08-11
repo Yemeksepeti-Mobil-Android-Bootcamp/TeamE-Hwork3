@@ -21,4 +21,5 @@ class CatalogViewModel @Inject constructor (
     }
 
 
+
 }
