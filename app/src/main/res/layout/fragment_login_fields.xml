@@ -77,7 +77,7 @@
         android:id="@+id/editTextEmailAdress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your email"
+        android:hint="Your email"
         android:fontFamily="@font/montserrat_regular"
         android:paddingTop="16sp"
         android:textSize="14sp"
@@ -105,7 +105,7 @@
         android:paddingTop="16sp"
         android:paddingBottom="16sp"
         android:textSize="14sp"
-        android:text="Password"
+        android:hint="Password"
         android:textColor="#80031925"
         android:backgroundTint="#00000000"/>
 
