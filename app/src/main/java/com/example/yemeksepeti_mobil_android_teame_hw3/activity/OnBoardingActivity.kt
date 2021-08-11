@@ -4,12 +4,15 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageButton
 import android.widget.RelativeLayout
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.viewpager.widget.ViewPager
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.OnBoardingViewPagerAdapter
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.local.SharedPrefManager
 import com.example.yemeksepeti_mobil_android_teame_hw3.model.OnBoardingData
 import com.google.android.material.tabs.TabLayout
 
@@ -23,6 +26,7 @@ class OnBoardingActivity : AppCompatActivity() {
     val onBoardingDataList: MutableList<OnBoardingData> = ArrayList()
     var relativeLayout: RelativeLayout? = null
     var touchableList: ArrayList<View>? = ArrayList()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -91,13 +95,17 @@ class OnBoardingActivity : AppCompatActivity() {
         touchableList?.forEach { it.isEnabled = false }
     }
 
+
     private fun btnGetStartedListener() {
-        viewPagerAdapter?.btnGetStarted?.setOnClickListener {
-            savePrefData()
-            val intent = Intent(applicationContext, StartActivity::class.java)
-            startActivity(intent)
-            finish()
+
+            viewPagerAdapter?.btnGetStarted?.setOnClickListener {
+
+                savePrefData()
+                val intent = Intent(applicationContext, StartActivity::class.java)
+                startActivity(intent)
+                finish()
         }
+
     }
 
     private fun btnBackOnClickListener() {
