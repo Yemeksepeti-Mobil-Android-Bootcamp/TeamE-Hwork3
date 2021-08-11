@@ -28,21 +28,16 @@ class PopularDestinationAdapter: RecyclerView.Adapter<PopularDestinationAdapter.
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): PopularDestinationAdapter.PopularDestinationViewHolder {
+    ): PopularDestinationViewHolder {
         val view = CellPopularDestinationBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PopularDestinationViewHolder(view)
     }
 
-
     override fun onBindViewHolder(
-        holder: PopularDestinationAdapter.PopularDestinationViewHolder,
+        holder: PopularDestinationViewHolder,
         position: Int
     ) {
         holder.setItem(countryList?.data!![position])
-
-        //holder.setItem(R.drawable.rome,"Rome")
-       //holder.setItem(R.drawable.rome,"Rome")
-       //holder.setItem(R.drawable.rome,"Rome")
     }
 
     override fun getItemCount(): Int = countryList?.data?.size ?: 0

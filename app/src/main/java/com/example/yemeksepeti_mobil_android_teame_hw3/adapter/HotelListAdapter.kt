@@ -20,24 +20,20 @@ class HotelListAdapter: RecyclerView.Adapter<HotelListAdapter.HotelListViewHolde
             Glide.with(binding.root.context).load(item.imageUrl).placeholder(R.drawable.loading_animation).into(binding.hotelImg)
             binding.hotelName.text = item.name
             binding.hotelPrice.text = "$" + "${item.price}"
-            //imgPopularDestination.setImageResource(R.drawable.rome)
-            //titlePopularDestination.text = title
+            binding.ratingbarHotel.numStars = item.star.toInt()
         }
     }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): HotelListAdapter.HotelListViewHolder {
+    ): HotelListViewHolder {
         val view = CellHotelListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return HotelListViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: HotelListAdapter.HotelListViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: HotelListViewHolder, position: Int) {
         holder.setItem(hotelList?.data!![position])
-        //holder.setItem(R.drawable.hotel)
-        //holder.setItem(R.drawable.hotel)
-        //holder.setItem(R.drawable.hotel)
     }
 
     override fun getItemCount(): Int = hotelList?.data?.size ?: 0
