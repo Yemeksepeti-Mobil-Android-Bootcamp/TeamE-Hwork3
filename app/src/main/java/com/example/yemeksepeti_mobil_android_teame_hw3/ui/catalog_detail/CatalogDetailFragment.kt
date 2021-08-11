@@ -52,6 +52,7 @@ class CatalogDetailFragment: Fragment() {
                 Resource.Status.SUCCESS -> {
                     Log.e("Catalog fragment","Succes")
                     adapter.hotelList = it.data!!.`data` as ArrayList<HotelData>
+                    _binding.CatalogDetailProgressBar.visibility = View.GONE
                     adapter.notifyDataSetChanged()
 
 

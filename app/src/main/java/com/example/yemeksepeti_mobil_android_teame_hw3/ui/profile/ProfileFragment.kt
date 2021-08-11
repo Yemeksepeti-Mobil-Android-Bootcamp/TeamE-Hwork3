@@ -32,13 +32,14 @@ class ProfileFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getUserData().observe(viewLifecycleOwner, {
             when(it.status){
-                Resource.Status.SUCCESS -> {
+                Resource.Status.SUCCESS -> { 
                     val userResponse = UserResponse(it.data!!.data,it.data.success)
                     val userData = userResponse.data
                     val userNameString = userData.name[0].toString() + userData.name.substringAfterLast(" ").lowercase()
                     _binding.nameTextView.text = userData.name
                     _binding.emailTextView.text = userData.email
                     _binding.usernameTextView.text = userNameString
+                    _binding.profileLoadingBar.visibility = View.GONE
                     //Phone-Birthday-Address textviewlar dummy data ile dolu
                 }
             }

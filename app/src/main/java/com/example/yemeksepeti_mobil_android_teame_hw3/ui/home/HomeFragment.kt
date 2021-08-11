@@ -15,6 +15,7 @@ import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.PopularDestinatio
 import com.example.yemeksepeti_mobil_android_teame_hw3.adapter.ToDoAdapter
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.country.AllCountryResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.AllHotelResponse
+import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.FragmentCatalogDetailBinding
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.FragmentHomeBinding
 import com.example.yemeksepeti_mobil_android_teame_hw3.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,7 +42,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return _binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -54,11 +56,13 @@ class HomeFragment : Fragment() {
         viewModel.getAllCountryList().observe(viewLifecycleOwner, Observer {
             when(it.status) {
                 Resource.Status.LOADING -> {
-
+                    _binding.homescrollview.visibility = View.GONE
 
                 }
 
                 Resource.Status.SUCCESS -> {
+                    _binding.homeLoadingBar.visibility = View.GONE
+                    _binding.homescrollview.visibility = View.VISIBLE
                     popularDestinationAdapter.countryList = it.data as AllCountryResponse
                     popularDestinationAdapter.notifyDataSetChanged()
                 }
