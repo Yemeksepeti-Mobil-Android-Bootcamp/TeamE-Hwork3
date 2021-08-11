@@ -2,6 +2,7 @@ package com.example.yemeksepeti_mobil_android_teame_hw3.util
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginResponse
 import kotlinx.coroutines.Dispatchers
 
 fun <T> performNetworkOperation(call: suspend () -> Resource<T>) : LiveData<Resource<T>> {
@@ -29,10 +30,9 @@ fun <T> performAuthTokenNetworkOperation(
 
         if(networkCall.status == Resource.Status.SUCCESS) {
             val data = networkCall.data!!
-
-            /*if(data is LoginResponse) {
+            if(data is LoginResponse) {
                 save(data.token)
-            }*/
+            }
 
             emit(Resource.success(data))
         } else if(networkCall.status == Resource.Status.ERROR) {
