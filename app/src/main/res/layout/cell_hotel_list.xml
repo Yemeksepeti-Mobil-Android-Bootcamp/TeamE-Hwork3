@@ -31,11 +31,17 @@
             android:text="White Ibıza"
             android:textColor="@color/white" />
 
-        <ImageView
-            android:layout_marginVertical="3dp"
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingbar_hotel"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/stars" />
+            android:numStars="5"
+            android:progressBackgroundTint="#FFC107"
+            android:progressTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/hotelName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_marginVertical="3dp"
