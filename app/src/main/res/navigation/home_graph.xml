@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_catalogDetailFragment_to_productFragment"
             app:destination="@id/productFragment" />
+        <argument
+            android:name="countryId"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"

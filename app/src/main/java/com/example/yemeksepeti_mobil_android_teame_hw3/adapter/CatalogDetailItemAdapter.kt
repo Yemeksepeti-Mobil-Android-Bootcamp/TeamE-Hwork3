@@ -2,13 +2,18 @@ package com.example.yemeksepeti_mobil_android_teame_hw3.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.common.CountryData
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelData
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CatalogDetailItemBinding
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CatalogItemBinding
 
 class CatalogDetailItemAdapter: RecyclerView.Adapter<CatalogDetailItemAdapter.CatalogDetailItemViewHolder>() {
+    var hotelList = ArrayList<HotelData>()
 
     class CatalogDetailItemViewHolder(var binding: CatalogDetailItemBinding) : RecyclerView.ViewHolder(binding.root){
 
@@ -26,12 +31,18 @@ class CatalogDetailItemAdapter: RecyclerView.Adapter<CatalogDetailItemAdapter.Ca
     }
 
     override fun onBindViewHolder(holder: CatalogDetailItemViewHolder, position: Int) {
+        holder.binding.placeText.text = hotelList[position].name
+        holder.binding.priceText.text = hotelList[position].price
+        Glide.with(holder.binding.catalogImage.context).load(hotelList[position].imageUrl).into(holder.binding.catalogImage)
         holder.binding.btnHotelShow.setOnClickListener {
-            it.findNavController().navigate(R.id.action_catalogDetailFragment_to_productFragment)
+            val bundle = bundleOf("hotelId" to hotelList[position].id)
+            it.findNavController().navigate(R.id.action_catalogDetailFragment_to_productFragment,bundle)
         }
 
     }
 
-    override fun getItemCount(): Int = 3
+    override fun getItemCount(): Int{
 
+        return hotelList.size
+    }
 }
