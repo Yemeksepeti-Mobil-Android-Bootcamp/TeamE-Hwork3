@@ -21,7 +21,7 @@ Travel application where you can search for hotels by country
 
 <image src="https://github.com/Yemeksepeti-Mobil-Android-Bootcamp/TeamE-Hwork3/blob/main/GitHub/travelGuide.gif" width="300">
   
-> Thanks for Tunahan Aydınoğlu for Backend Support :blush:
+> Thanks Tunahan Aydınoğlu for Backend Support :blush:
 
 
 
