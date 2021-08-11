@@ -40,11 +40,11 @@
 
         <TextView
             android:id="@+id/catalog_detail_item_text"
-            android:layout_width="64dp"
-            android:layout_height="57dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="132dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="Trip to"
             android:textColor="#FFFF"
@@ -60,7 +60,6 @@
             android:id="@+id/placeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="27dp"
             android:fontFamily="@font/montserrat_bold"

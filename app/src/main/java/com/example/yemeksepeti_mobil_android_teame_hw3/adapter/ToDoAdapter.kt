@@ -28,13 +28,13 @@ class ToDoAdapter: RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ToDoAdapter.ToDoViewHolder {
+    ): ToDoViewHolder {
         val view = CellToDoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ToDoViewHolder(view)
     }
 
     override fun onBindViewHolder(
-        holder: ToDoAdapter.ToDoViewHolder,
+        holder: ToDoViewHolder,
         position: Int
     ) {
         holder.setItem(hotelList?.data!![position])
