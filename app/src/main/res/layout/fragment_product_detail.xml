@@ -20,7 +20,7 @@
             android:id="@+id/productDetailBackground"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/productdetailbackground" />
+            android:src="@drawable/background_productdetail" />
         <ProgressBar
             android:id="@+id/productDetailLoadingBar"
             android:layout_width="wrap_content"
