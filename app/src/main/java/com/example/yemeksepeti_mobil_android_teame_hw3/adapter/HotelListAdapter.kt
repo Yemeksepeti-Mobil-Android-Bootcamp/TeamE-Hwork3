@@ -2,7 +2,8 @@ package com.example.yemeksepeti_mobil_android_teame_hw3.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
@@ -34,6 +35,12 @@ class HotelListAdapter: RecyclerView.Adapter<HotelListAdapter.HotelListViewHolde
 
     override fun onBindViewHolder(holder: HotelListViewHolder, position: Int) {
         holder.setItem(hotelList?.data!![position])
+        holder.binding.hotelListLayout.setOnClickListener {
+            val bundle = bundleOf("hotelId" to hotelList?.data!![position].id)
+            var navController = Navigation.findNavController(it)
+            navController.navigate(R.id.action_homeFragment_to_productFragment, bundle)
+            //it.context.findNavController().navigate(R.id.action_catalogDetailFragment_to_productFragment,bundle)
+        }
     }
 
     override fun getItemCount(): Int = hotelList?.data?.size ?: 0

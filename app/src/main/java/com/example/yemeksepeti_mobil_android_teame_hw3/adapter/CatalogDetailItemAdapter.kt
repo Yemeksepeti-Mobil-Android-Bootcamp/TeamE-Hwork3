@@ -7,10 +7,8 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
-import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.common.CountryData
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelData
 import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CatalogDetailItemBinding
-import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CatalogItemBinding
 
 class CatalogDetailItemAdapter: RecyclerView.Adapter<CatalogDetailItemAdapter.CatalogDetailItemViewHolder>() {
     var hotelList = ArrayList<HotelData>()

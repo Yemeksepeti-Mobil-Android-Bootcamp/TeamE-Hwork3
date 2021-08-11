@@ -5,6 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
@@ -38,6 +40,11 @@ class ToDoAdapter: RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
         position: Int
     ) {
         holder.setItem(hotelList?.data!![position])
+        holder.binding.cellToDoLayout.setOnClickListener {
+            val bundle = bundleOf("hotelId" to hotelList?.data!![position].id)
+            var navController = Navigation.findNavController(it)
+            navController.navigate(R.id.action_homeFragment_to_fragmentProductDetail2, bundle)
+        }
     }
 
     override fun getItemCount(): Int = hotelList?.data?.size ?: 0
