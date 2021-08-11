@@ -32,7 +32,7 @@ class ProfileFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getUserData().observe(viewLifecycleOwner, {
             when(it.status){
-                Resource.Status.SUCCESS -> { 
+                Resource.Status.SUCCESS -> {
                     val userResponse = UserResponse(it.data!!.data,it.data.success)
                     val userData = userResponse.data
                     val userNameString = userData.name[0].toString() + userData.name.substringAfterLast(" ").lowercase()
