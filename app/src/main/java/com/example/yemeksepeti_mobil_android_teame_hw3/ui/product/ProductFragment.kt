@@ -55,13 +55,12 @@ class ProductFragment: Fragment() {
                         _binding.hotelName.text = it.data!!.hotelByIdData.name
                         _binding.location.text = it.data!!.hotelByIdData.location
                         _binding.price.text = "$"+it.data!!.hotelByIdData.price
-                       Glide.with(_binding.productLayout.context).load(it.data!!.hotelByIdData.imageUrl).into(_binding.productBackground)
-                       _binding.ratingbar.numStars = it.data!!.hotelByIdData.star.toInt()
+                        Glide.with(_binding.productLayout.context).load(it.data!!.hotelByIdData.imageUrl).into(_binding.productBackground)
+                        _binding.productLoadingBar.visibility = View.GONE
+                        _binding.ratingbar.numStars = it.data!!.hotelByIdData.star.toInt()
                         _binding.btnMoreDetail.setOnClickListener {
                             val bundle = bundleOf("hotelId" to hotelId)
                             findNavController().navigate(R.id.action_productFragment_to_fragmentProductDetail,bundle)
-
-
                         }
                     }
                     Resource.Status.ERROR -> {
