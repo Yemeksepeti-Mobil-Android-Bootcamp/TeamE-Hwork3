@@ -22,7 +22,7 @@ fun <T> performNetworkOperation(call: suspend () -> Resource<T>) : LiveData<Reso
 
 fun <T> performAuthTokenNetworkOperation(
     call: suspend () -> Resource<T>,
-    save: suspend (token: String) -> Unit
+    save:  (token: String) -> Unit
 ) : LiveData<Resource<T>> {
     return liveData(Dispatchers.IO) {
         emit(Resource.loading())
