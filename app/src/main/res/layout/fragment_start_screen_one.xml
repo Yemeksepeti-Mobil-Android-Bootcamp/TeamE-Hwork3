@@ -70,34 +70,5 @@
         android:textColor="@color/white"
         android:background="@drawable/twitter_button"
         android:backgroundTint="#2D9CDB"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/already_hav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_regular"
-            android:layout_marginTop="20dp"
-            android:text="@string/already_hav"
-            android:textAppearance="@style/already_hav"
-            android:gravity="center"
-            />
-        <TextView
-            android:id="@+id/log_in"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginLeft="2dp"
-
-            android:layout_marginTop="20dp"
-            android:text="@string/log_in"
-            android:textAppearance="@style/log_in"
-            android:gravity="center"
-            android:clickable="true"
-            />
-    </LinearLayout>
 
 </LinearLayout>
