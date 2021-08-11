@@ -8,11 +8,10 @@ import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginRe
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterResponse
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.user.UserRequest
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.user.UserResponse
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface TravelApiService {
     @POST("api/auth/login")
@@ -32,4 +31,7 @@ interface TravelApiService {
 
     @GET("api/e/hotel")
     suspend fun getAllHotels() : Response<AllHotelResponse>
+
+    @GET("api/auth/profile")
+    suspend fun getUserData(@Header("Authorization") Authorization: String) : Response<UserResponse>
 }

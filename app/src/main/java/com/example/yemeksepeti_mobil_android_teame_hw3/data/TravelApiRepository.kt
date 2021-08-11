@@ -2,6 +2,7 @@ package com.example.yemeksepeti_mobil_android_teame_hw3.data
 
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterRequest
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.user.UserRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.local.LocaleDataSource
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.remote.RemoteDataSource
 import com.example.yemeksepeti_mobil_android_teame_hw3.util.performAuthTokenNetworkOperation
@@ -44,5 +45,9 @@ class TravelApiRepository @Inject constructor(
 
     fun getAllHotels() = performNetworkOperation {
         remoteDataSource.getAllHotels()
+    }
+
+    fun getUserData(Authorization: String) = performNetworkOperation {
+        remoteDataSource.getUserData(Authorization)
     }
 }
