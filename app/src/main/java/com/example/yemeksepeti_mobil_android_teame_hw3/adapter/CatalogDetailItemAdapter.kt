@@ -32,7 +32,7 @@ class CatalogDetailItemAdapter: RecyclerView.Adapter<CatalogDetailItemAdapter.Ca
 
     override fun onBindViewHolder(holder: CatalogDetailItemViewHolder, position: Int) {
         holder.binding.placeText.text = hotelList[position].name
-        holder.binding.priceText.text = hotelList[position].price
+        holder.binding.priceText.text = "$" + hotelList[position].price
         Glide.with(holder.binding.catalogImage.context).load(hotelList[position].imageUrl).into(holder.binding.catalogImage)
         holder.binding.btnHotelShow.setOnClickListener {
             val bundle = bundleOf("hotelId" to hotelList[position].id)
