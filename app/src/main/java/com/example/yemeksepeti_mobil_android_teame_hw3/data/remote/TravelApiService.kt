@@ -4,6 +4,7 @@ import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.country.AllCo
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.AllHotelResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelByCountryListResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelData
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.hotel.HotelByIdResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginRequest
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.login.LoginResponse
 import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.register.RegisterRequest
@@ -27,7 +28,7 @@ interface TravelApiService {
     suspend fun getHotelsByCountryId(@Path("countryId") countryId : String) : Response<HotelByCountryListResponse>
 
     @GET("api/e/hotel/{hotelId}")
-    suspend fun getHotelById(@Path("hotelId") hotelId : String) : Response<HotelData>
+    suspend fun getHotelById(@Path("hotelId") hotelId : String) : Response<HotelByIdResponse>
 
     @GET("api/e/hotel")
     suspend fun getAllHotels() : Response<AllHotelResponse>

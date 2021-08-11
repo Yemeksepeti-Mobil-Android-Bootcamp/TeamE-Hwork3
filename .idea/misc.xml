@@ -3,14 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_login_fields.xml" value="0.33" />
-        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_profile.xml" value="0.2140625" />
-        <entry key="..\:/Users/Atahan/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_signup.xml" value="0.2140625" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/catalog_detail_item.xml" value="0.1265625" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/catalog_item.xml" value="0.23505434782608695" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_catalog_detail.xml" value="0.1265625" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_product.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/activity_main.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/activity_navigation.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/activity_onboarding.xml" value="0.3171171171171171" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_home.xml" value="0.3171171171171171" />
-        <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_login_fields.xml" value="0.25" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_product_detail.xml" value="0.17747747747747747" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_signup.xml" value="0.3171171171171171" />
         <entry key="..\:/Users/srtc_/AndroidStudioProjects/TeamE-Hwork3/app/src/main/res/layout/fragment_start_screen_one.xml" value="0.3171171171171171" />
