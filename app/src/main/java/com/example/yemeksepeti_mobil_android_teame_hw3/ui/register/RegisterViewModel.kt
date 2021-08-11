@@ -24,4 +24,7 @@ class RegisterViewModel @Inject constructor(
         val request = RegisterRequest(name, email, password)
         return TravelapiRepository.register(request)
     }
+    fun saveToken(token:String) {
+        TravelapiRepository.saveToken(token)
+    }
 }

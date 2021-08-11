@@ -27,6 +27,7 @@ class TravelApiRepository @Inject constructor(
     fun checkToken(): String? {
         return localeDataSource.getToken()
     }
+    fun saveToken(token:String) = localeDataSource.saveToken(token)
 
     fun register(registerRequest: RegisterRequest) = performNetworkOperation {
         remoteDataSource.register(registerRequest)
