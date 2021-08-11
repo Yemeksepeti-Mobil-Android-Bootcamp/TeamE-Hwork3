@@ -6,18 +6,22 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.AllHotelResponse
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelData
+import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CellToDoBinding
 
 class ToDoAdapter: RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
 
-    class ToDoViewHolder(var view: View) : RecyclerView.ViewHolder(view) {
-        val imgPopularDestination: ImageView = view.findViewById(R.id.img_popular_destination)
-        val titleToDo: TextView = view.findViewById(R.id.top_to_do_title)
-        val countryToDo: TextView = view.findViewById(R.id.top_to_do_country)
-        fun setItem(img: Int, title: String, country: String?) {
-            imgPopularDestination.setImageResource(img)
-            titleToDo.text = title
-            countryToDo.text = country
+    var hotelList : AllHotelResponse? = null
+
+    class ToDoViewHolder(var binding: CellToDoBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        fun setItem(item: HotelData) {
+            Glide.with(binding.root.context).load(item.imageUrl).placeholder(R.drawable.loading_animation).into(binding.imgToDo)
+            binding.topToDoTitle.text = item.name
+            binding.topToDoCountry.text = item.country.name
         }
     }
 
@@ -25,7 +29,7 @@ class ToDoAdapter: RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): ToDoAdapter.ToDoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.cell_to_do, parent, false)
+        val view = CellToDoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ToDoViewHolder(view)
     }
 
@@ -33,10 +37,8 @@ class ToDoAdapter: RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
         holder: ToDoAdapter.ToDoViewHolder,
         position: Int
     ) {
-        holder.setItem(R.drawable.todo,"Hunt with eagle in\nAltai Mountains","Ulgii, Mongolia")
-        holder.setItem(R.drawable.todo,"Hunt with eagle in\nAltai Mountains","Ulgii, Mongolia")
-        holder.setItem(R.drawable.todo,"Hunt with eagle in\nAltai Mountains","Ulgii, Mongolia")
+        holder.setItem(hotelList?.data!![position])
     }
 
-    override fun getItemCount(): Int = 3
+    override fun getItemCount(): Int = hotelList?.data?.size ?: 0
 }

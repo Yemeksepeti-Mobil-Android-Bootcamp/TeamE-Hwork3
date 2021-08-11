@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 data class CountryData(
     @SerializedName("createdAt")
     val createdAt: String,
-   // @SerializedName("hotels")
+    //@SerializedName("hotels")
     //val hotels: List<String>,
     @SerializedName("_id")
     val id: String,

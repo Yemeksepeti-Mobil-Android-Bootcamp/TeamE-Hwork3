@@ -1,18 +1,27 @@
 package com.example.yemeksepeti_mobil_android_teame_hw3.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.yemeksepeti_mobil_android_teame_hw3.R
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.AllHotelResponse
+import com.example.yemeksepeti_mobil_android_teame_hw3.data.entity.hotels.HotelData
+import com.example.yemeksepeti_mobil_android_teame_hw3.databinding.CellHotelListBinding
 
 class HotelListAdapter: RecyclerView.Adapter<HotelListAdapter.HotelListViewHolder>() {
-    class HotelListViewHolder(var view: View) : RecyclerView.ViewHolder(view){
-        var hotelImg : ImageView = view.findViewById(R.id.hotel_img)
 
-        fun setItem(img: Int) {
-            hotelImg.setImageResource(img)
+    var hotelList : AllHotelResponse? = null
+
+    class HotelListViewHolder(var binding: CellHotelListBinding) : RecyclerView.ViewHolder(binding.root){
+
+        fun setItem(item: HotelData) {
+            Glide.with(binding.root.context).load(item.imageUrl).placeholder(R.drawable.loading_animation).into(binding.hotelImg)
+            binding.hotelName.text = item.name
+            binding.hotelPrice.text = "$" + "${item.price}"
+            //imgPopularDestination.setImageResource(R.drawable.rome)
+            //titlePopularDestination.text = title
         }
     }
 
@@ -20,15 +29,16 @@ class HotelListAdapter: RecyclerView.Adapter<HotelListAdapter.HotelListViewHolde
         parent: ViewGroup,
         viewType: Int
     ): HotelListAdapter.HotelListViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.cell_hotel_list, parent, false)
+        val view = CellHotelListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return HotelListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: HotelListAdapter.HotelListViewHolder, position: Int) {
-        holder.setItem(R.drawable.hotel)
-        holder.setItem(R.drawable.hotel)
-        holder.setItem(R.drawable.hotel)
+        holder.setItem(hotelList?.data!![position])
+        //holder.setItem(R.drawable.hotel)
+        //holder.setItem(R.drawable.hotel)
+        //holder.setItem(R.drawable.hotel)
     }
 
-    override fun getItemCount(): Int = 3
+    override fun getItemCount(): Int = hotelList?.data?.size ?: 0
 }
